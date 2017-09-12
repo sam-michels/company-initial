@@ -19,7 +19,7 @@ public class SampleData implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {	 
     	add(new Company("Resilient Scale", new String[]{"Resilient Scale, Inc", "Resilient Scale Inc", "RScale"}, "https://rscale.io", "resilientscale"));
-    	add(new Company("Cloud Foundry", new String[]{"Cloud Foundry Foundation", "CFF"}, "https://cloudfoundry.org", "cloudfoundry"));
+    	add(new Company("Cloud Fundry", new String[]{"Cloud Foundry Foundation", "CFF"}, "https://cloudfoundry.org", "cloudfoundry"));
         repository.findAll().forEach(System.out::println);
     }
     	
