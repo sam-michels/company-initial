@@ -2,9 +2,9 @@ build_task: pipelines/gradle/tasks/gradle-assemble.yml # don't change
 deploy_dev_task: pipelines/cf/tasks/blue-green-deploy.yml # don't change
 
 app_name: company 
-jar_name: smichels-company 
+jar_name: smichels-company # set this to '<first_initial><lastname>-company' ex: sgreenberg-company
 
-github_app_repo_uri: https://github.com/sam-michels/company-initial
+github_app_repo_uri: https://github.com/sam-michels/company-initial  # https url of your company app github fork.  ex: https://github.com/spgreenberg/company-initial.git
 github_app_repo_branch: master # don't change
 
 github_pipelines_repo_uri: https://github.com/sam-michels/training-pipelines-initial
