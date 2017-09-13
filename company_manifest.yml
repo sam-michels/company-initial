@@ -1,7 +1,7 @@
 applications:
 - name: company
   instances: 1
-  memory: 750M
+  memory: 1G
   disk_quota: 1024M
   routes:
   - route: company-peppercornish-parabrake.cfapps.io
