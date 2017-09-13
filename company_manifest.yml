@@ -1,14 +1,11 @@
 applications:
-- name: company
+- name: roster
   instances: 1
-  memory: 750M
+  memory: 1G
   disk_quota: 1024M
-  routes:
-  - route: company-peppercornish-parabrake.cfapps.io
   buildpack: java_buildpack
   env:
     SPRING_PROFILES_ACTIVE: dev
   services:
-  - companydb
-  - config-get
+  - mydb
   stack: cflinuxfs2
